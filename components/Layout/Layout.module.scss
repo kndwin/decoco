@@ -23,18 +23,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.footer img {
-  margin-left: 0.5rem;
-}
+  img {
+    margin-left: 0.5rem;
+  }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .logo {
   height: 1em;
 }
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+
+  a {
+    margin: 0 2rem;
+  }
+}
+
