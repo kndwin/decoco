@@ -1,6 +1,5 @@
 import Layout from '../components/Layout/Layout'
 import utils from '../styles/utils.module.scss'
-import Image from 'next/image'
 
 export default function Collection() {
   return (
@@ -17,7 +16,7 @@ export default function Collection() {
           <p>
             Sofas, Lounges, Ottomans
           </p>
-          <Image
+          <img className={utils.image}
             src='/home-green-couch.jpg'
             width={1000}
             height={500}
@@ -29,7 +28,7 @@ export default function Collection() {
           <p>
             Sofas, Lounges, Ottomans
           </p>
-          <Image
+          <img className={utils.image}
             src='/home-green-couch.jpg'
             width={1000}
             height={500}
@@ -41,7 +40,7 @@ export default function Collection() {
           <p>
             Sofas, Lounges, Ottomans
           </p>
-          <Image
+          <img className={utils.image}
             src='/home-green-couch.jpg'
             width={1000}
             height={500}
@@ -53,7 +52,7 @@ export default function Collection() {
           <p>
             Sofas, Lounges, Ottomans
           </p>
-          <Image
+          <img className={utils.image}
             src='/home-green-couch.jpg'
             width={1000}
             height={500}
