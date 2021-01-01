@@ -3,12 +3,23 @@ import utils from '../../styles/utils.module.scss'
 import Link from 'next/link'
 
 export default function Collection() {
-
   const collection = [
     {
-      title: 'Furniture', 
+      title: 'Lounge', 
       description: 'Sofas, Lounges, Ottomans',
-      imageSrc: '/home-green-couch.jpg'
+      imageSrc: '/home-green-couch.jpg',
+      products: [
+        {
+          title: 'Sofa',
+          description: 'Sofas, Lounges, Ottomans',
+          imageSrc: '/furniture/sophia.png'
+        },
+        {
+          title: 'Beth',
+          description: 'Sofas, Lounges, Ottomans',
+          imageSrc: '/furniture/sophia.png'
+        }
+      ]
     }, 
     {
       title: 'Kitchens', 
@@ -16,7 +27,7 @@ export default function Collection() {
       imageSrc: '/home-green-couch.jpg'
     },
     {
-      title: 'Kitchens', 
+      title: 'Living room', 
       description: 'Sofas, Lounges, Ottomans',
       imageSrc: '/home-green-couch.jpg'
     },
@@ -43,12 +54,7 @@ export default function Collection() {
         Collection
       </h1>
       <p className={utils.description}>
-        With 20 years of experience, we'll take care of you.
-        Our extensive collection of furniture, kitchens, vanities
-        With 20 years of experience, we'll take care of you.
-        With 20 years of experience, we'll take care of you.
-        Our extensive collection of furniture, kitchens, vanities
-        Our extensive collection of furniture, kitchens, vanities
+        With 20 years of experience, we'll take care of you
       </p>
       <div className={utils.grid} >
       {collection.map((item, index) => (
@@ -65,6 +71,7 @@ export default function Collection() {
         </Link>
       ))}
       </div>
+
     </Layout>
   )
 }

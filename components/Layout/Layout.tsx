@@ -14,9 +14,8 @@ export default function Layout ({
   const [scrolled, setScrolled] = useState<boolean>(false)
 
   const handleScroll = () => {
-    const navbar = document.getElementById(`${styles.nav}`);
-    const sticky = navbar.offsetTop
-    if (window.pageYOffset > sticky) {
+    const offset = window.pageYOffset
+    if (offset > 110) {
       setScrolled(true)
     } else {
       setScrolled(false)
@@ -37,11 +36,14 @@ export default function Layout ({
       </Head>
       <header id={styles.nav}
         className={`${scrolled ? styles.scrolled : "" }`}>
-        <img src='/logo-black.png' 
-          alt="Logo for Decoco" 
-          className={styles.logo}/>
         <Link href="/">
-          <a>Home</a>
+          <a id={styles.homeLink}>
+            <img src='/logo-black.png' 
+              alt="Logo for Decoco" 
+              className={styles.logo}
+            />
+            Home
+          </a>
         </Link>          
         <Link href="/about-us">
           <a>About Us</a>
@@ -58,7 +60,10 @@ export default function Layout ({
           {children}
         </div>
         <footer className={styles.footer}>
-          {`{  }`} with ❤ by kndwin
+          <a href="https://kndwin.dev">
+          <span style={{fontWeight: 'bold'}}>{`{ }`}</span>
+          &nbsp; with ❤ by kndwin
+          </a>
         </footer>
       </div>
     </div>

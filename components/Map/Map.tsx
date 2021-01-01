@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react'
 import styles from './Map.module.scss'
+import utils from '../../styles/utils.module.scss'
 
 export default function Map() {
   const ref = useRef()
@@ -38,8 +39,11 @@ export default function Map() {
   }
   
   return (
-  <div ref={ref}
-    className={styles.map}
-  />
+    <div className={styles.container}>
+      <h2 className={utils.titleH2}>Map</h2>
+      <div ref={ref}
+        className={styles.map}
+      />
+    </div>
   )
 }

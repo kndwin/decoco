@@ -11,18 +11,14 @@ export default function ContactUs() {
       <h1 className={utils.title}>
         Contact Us
       </h1>
-      <h2 className={utils.title}>
-        Trading hours
-      </h2>
-      <TradingHours />
-      <h1 className={utils.title}>
-        Get in touch
-      </h1>
       <ContactForm />
       <h1 className={utils.title}>
-        Map
+        Visit us
       </h1>
-      <Map />
+      <div className={utils.flexrow}>
+        <TradingHours />
+        <Map />
+      </div>
     </Layout>
   )
 }
