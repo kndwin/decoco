@@ -14,3 +14,20 @@ a {
 * {
   box-sizing: border-box;
 }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
+table, th, td {
+  border: 2px solid black;
+}
+
+th, td {
+  padding: 0.5rem 1.2rem;
+} 
+
+table {
+  border-collapse: collapse;
+}
