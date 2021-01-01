@@ -19,27 +19,43 @@ export default function ContactForm () {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className={styles.container}>
+        <label htmlFor="Name"
+          className={styles.label}>
+          Name
+        </label>
         <input name="name" 
-          placeholder="Your Name" 
+          placeholder="John Smith" 
           className={styles.input}
           ref={register} 
         />
+        <label htmlFor="Email"
+          className={styles.label}>
+          Email
+        </label>
         <input 
           type="email"
           name="email" 
-          placeholder="Your Email" 
+          placeholder="john.smith@gmail.com" 
           className={styles.input}
           ref={register} 
         />
+        <label htmlFor="Phone Number"
+          className={styles.label}>
+          Phone Number
+        </label>
         <input 
           name="number" 
-          placeholder="Your Phone number" 
+          placeholder="+61412345678" 
           className={styles.input}
           ref={register} 
         />
+        <label htmlFor="Message"
+          className={styles.label}>
+          Message
+        </label>
         <textarea 
           name="message" 
-          placeholder="Message" 
+          placeholder="Type your message here..." 
           className={`${styles.input} ${styles.textarea}`}
           ref={register} 
         />
