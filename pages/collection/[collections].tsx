@@ -30,12 +30,12 @@ export default function CollectionDetails({
   }
 
   const { collections } = router.query
-  const collection = collections.toString();
+  const collection = collections.toString().replace('-', ' ');
 
   return (
     <Layout>
       <h1 className={utils.title}>
-        {collections}
+        {collection}
       </h1>
       <div className={utils.grid}>
         {collectionData
@@ -71,7 +71,7 @@ export const getStaticProps: GetStaticProps = async () => {
 export const getStaticPaths: GetStaticPaths = async () => {
   const collectionData = getCollectionData()
   const paths = collectionData.map(collection => ({
-    params: {collections: collection.title}
+    params: {collections: collection.title.toLowerCase().replace(' ', '-')}
   }))
 
   return {

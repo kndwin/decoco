@@ -29,7 +29,7 @@ export default function Collection({
       </p>
       <div className={utils.grid} >
       {collectionData.map((item, index) => (
-         <Link as={`collection/${item.title.toLowerCase()}`}
+         <Link as={`collection/${item.title.toLowerCase().replace(' ', '-')}`}
           href="/collection/[collections]">
           <a className={utils.card} key={index}>
             <h3>{item.title}</h3>
