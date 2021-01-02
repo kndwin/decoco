@@ -4,7 +4,7 @@ import { getCollectionData } from '../../lib/collectionData'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { useRouter } from 'next/router' 
 
-export default function Furniture({
+export default function CollectionDetails({
   collectionData
 }: {
   collectionData: {
@@ -20,8 +20,6 @@ export default function Furniture({
 }) {
 
   const router = useRouter()
-  const { collections } = router.query
-
 
   if (router.isFallback) {
     return (
@@ -31,28 +29,32 @@ export default function Furniture({
     )
   }
 
+  const { collections } = router.query
+  const collection = collections.toString();
+
   return (
     <Layout>
       <h1 className={utils.title}>
         {collections}
       </h1>
-      {collectionData
-        .filter(colData => !colData.title
-          .toLowerCase()
-          .localeCompare(collections))
-          [0]
-        ['products'].map((product, index) => {
-          return (
-          <a className={utils.card} key={index}>
-            <h3>{product.title}</h3>
-            <p>{product.description}</p>
-            <img className={utils.image}
-              src={product.imageSrc}
-              width={1000} height={500}
-            />
-          </a>
+      <div className={utils.grid}>
+        {collectionData
+          .filter(colData => !colData.title
+            .toLowerCase()
+            .localeCompare(collection))
+            [0]
+          ['products'].map((product, index) => (
+            <a className={utils.card} key={index}>
+              <h3>{product.title}</h3>
+              <p>{product.description}</p>
+              <img className={utils.image}
+                src={product.imageSrc}
+                width={1000} height={500}
+              />
+            </a>
           )
-      })}
+        )}
+      </div>
     </Layout>
   )
 }
