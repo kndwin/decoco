@@ -4,8 +4,9 @@ import utils from '../../styles/utils.module.scss'
 
 export default function Map() {
   const ref = useRef()
+
   useEffect(() => {
-    const apiKey = 'key=oaisjd';
+    const apiKey = process.env.googleMapApi;
     var script = document.createElement('script');
     script.src = 'https://maps.googleapis.com/maps/api/js?' + apiKey;
     document.head.appendChild(script);
