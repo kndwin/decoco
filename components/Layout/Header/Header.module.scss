@@ -1,0 +1,66 @@
+#nav {
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 1em;
+  background-color: white;
+  top: 0;
+  overflow: hidden;
+
+  a {
+    display: block;
+    float: left;
+    margin: 2rem;
+    font-size: 1.5rem;
+  }
+
+  a:hover {
+    font-weight: bold;
+  }
+}
+
+.logo {
+  height: 3em;
+}
+
+#homeLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  animation: smoothScroll 1s forwards;
+
+  @keyframes smoothScroll {
+    0% {
+      transform: translateY(-40px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+}
+
+@media (max-width: 800px) {
+  #nav {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1em 2.5em;
+    
+    a {
+      margin: 0.5rem 0em;
+      font-size: 1.5rem;
+    }
+  }
+
+}

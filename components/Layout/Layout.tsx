@@ -1,7 +1,7 @@
 import React, { ReactNode, useState, useEffect } from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
 import styles from './Layout.module.scss'
+import Header from './Header/Header'
 
 export default function Layout ({ 
   children, 
@@ -34,29 +34,9 @@ export default function Layout ({
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <header id={styles.nav}
-        className={`${scrolled ? styles.scrolled : "" }`}>
-        <Link href="/">
-          <a id={styles.homeLink}>
-            <img src='/logo-black.png' 
-              alt="Logo for Decoco" 
-              className={styles.logo}
-            />
-            Home
-          </a>
-        </Link>          
-        <Link href="/about-us">
-          <a>About Us</a>
-        </Link>
-        <Link href="/collection">
-          <a>Collection</a>
-        </Link>
-        <Link href='/contact-us'>
-          <a>Contact Us</a>
-        </Link>
-      </header>
       <div className={styles.container}>
-        <div className={styles.main}>
+        <Header scrolled={scrolled}/>
+        <div className={scrolled ? `${styles.main} ${styles.navPadding}` : styles.main}>
           {children}
         </div>
         <footer className={styles.footer}>
