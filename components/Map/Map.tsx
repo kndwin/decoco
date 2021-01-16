@@ -41,6 +41,9 @@ export default function Map() {
   return (
     <div className={styles.container}>
       <h2 className={utils.titleH2}>Map</h2>
+      <p className={utils.description}>
+        865 Punchbowl Rd, Punchbowl
+      </p>
       <div ref={ref}
         className={styles.map}
       />
