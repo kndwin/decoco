@@ -5,7 +5,7 @@ export default function Map() {
   const ref = useRef()
 
   useEffect(() => {
-    const apiKey = 'key=AAIzaSyAczntorLtBefdC-cWYSSvC_yYeQwUCOgo';
+    const apiKey = 'key=AIzaSyAczntorLtBefdC-cWYSSvC_yYeQwUCOgo';
     var script = document.createElement('script');
     script.src = 'https://maps.googleapis.com/maps/api/js?' + apiKey;
     document.head.appendChild(script);

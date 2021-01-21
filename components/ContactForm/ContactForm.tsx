@@ -1,5 +1,6 @@
 import { useForm } from 'react-hook-form'
 import styles from './ContactForm.module.scss'
+import emailjs from 'emailjs-com'
 
 type Inputs = {
   name: string,
@@ -11,13 +12,19 @@ type Inputs = {
 export default function ContactForm () {
 
   const { register, handleSubmit, watch, errors } = useForm<Inputs>();
-  const onSubmit = (data) => {
-    console.log(data)
-  } 
-  console.log(watch('example'))
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_12sy6gf', 'template_2n4reca', e.target, 'user_n1rYzzL6qqrffqtOAgZ78')
+      .then((result) => {
+        console.log(result.text)
+      }, (error) => {
+        console.log(error.text)
+      })
+  }
   
   return (
-    <form onSubmit={handleSubmit(onSubmit)}
+    <form onSubmit={sendEmail}
         className={styles.container}>
       <div className={styles.container}
       >
@@ -25,7 +32,7 @@ export default function ContactForm () {
           className={styles.label}>
           Name
         </label>
-        <input name="name" 
+        <input name="user_name" 
           placeholder="John Smith" 
           className={styles.input}
           ref={register} 
@@ -36,7 +43,7 @@ export default function ContactForm () {
         </label>
         <input 
           type="email"
-          name="email" 
+          name="user_email" 
           placeholder="john.smith@gmail.com" 
           className={styles.input}
           ref={register} 
@@ -46,7 +53,7 @@ export default function ContactForm () {
           Phone Number
         </label>
         <input 
-          name="number" 
+          name="contact_number" 
           placeholder="+61412345678" 
           className={styles.input}
           ref={register} 

@@ -28,12 +28,14 @@
   margin: 1em 0;
 }
 
-#homeLink {
+.link,.collapse {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
+.collapse {
+}
 
 .scrolled {
   position: fixed;
@@ -62,6 +64,26 @@
       margin: 0.5rem 0em;
       font-size: 1.5rem;
     }
+  }
+
+  .scrolled {
+    position: none;
+  }
+
+  .link {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    a {
+      margin: 0.5rem 0em;
+      font-size: 1.5rem;
+    }
+  }
+
+  .collapse {
+    display: none;
+    transition: width 600ms ease-out, height 600ms ease-out;
   }
 
 }
