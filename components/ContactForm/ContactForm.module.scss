@@ -1,6 +1,6 @@
 .container {
-  display: flex;
-  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
 }
 
 .input {
@@ -27,8 +27,7 @@
 }
 
 .label {
-  max-width: 800px;
-  width: 100vw;
+  width: 100%;
   padding: 0.2em 0.1em;
   margin: 0.25em 0;
 }

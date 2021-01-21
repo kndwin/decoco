@@ -17,8 +17,10 @@ export default function ContactForm () {
   console.log(watch('example'))
   
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <div className={styles.container}>
+    <form onSubmit={handleSubmit(onSubmit)}
+        className={styles.container}>
+      <div className={styles.container}
+      >
         <label htmlFor="Name"
           className={styles.label}>
           Name

@@ -10,13 +10,21 @@ export default function ContactUs() {
       <h1 className={utils.title}>
         Contact Us
       </h1>
-      <div>
+      <div className={utils.width100}>
         <p className={utils.description}>
           Fill out the form below to get in touch!
         </p>
         <ContactForm />
       </div>
-      <Map />
+      <h1 className={utils.title}>
+        Visit Us
+      </h1>
+      <div className={utils.width100}>
+        <p className={utils.description}>
+          Find us at 865 Punchbowl Road, Punchbowl
+        </p>
+        <Map />
+      </div>
     </Layout>
   )
 }
