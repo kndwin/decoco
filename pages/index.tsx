@@ -1,5 +1,6 @@
 import Layout from '../components/Layout/Layout'
 import utils from '../styles/utils.module.scss'
+import styles from './index.module.scss'
 import Link from 'next/link'
 
 export default function Home() {
@@ -30,11 +31,11 @@ export default function Home() {
       <p className={utils.description}>
       Sit amet aliquam id diam maecenas ultricies mi eget mauris. Metus aliquam eleifend mi in nulla. Et tortor at risus viverra. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Neque egestas congue quisque egestas diam in arcu. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Eleifend mi in nulla posuere sollicitudin. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Maecenas pharetra convallis posuere morbi leo. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Maecenas ultricies mi eget mauris pharetra et ultrices.
       </p>
-      <h1 className={utils.title}>
+      <button className={styles.button}>
         <Link href='/contact-us'>
-          Contact Us
+          Get in touch
         </Link>
-      </h1>
+      </button>
     </Layout>
   )
 }
