@@ -48,16 +48,6 @@ export default function ContactForm () {
           className={styles.input}
           ref={register} 
         />
-        <label htmlFor="Phone Number"
-          className={styles.label}>
-          Phone Number
-        </label>
-        <input 
-          name="contact_number" 
-          placeholder="+61412345678" 
-          className={styles.input}
-          ref={register} 
-        />
         <label htmlFor="Message"
           className={styles.label}>
           Message
