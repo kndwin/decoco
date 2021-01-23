@@ -38,7 +38,7 @@
 }
 
 .scrolled {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   animation: smoothScroll 1s forwards;
@@ -53,7 +53,7 @@
   }
 
 }
-
+              
 @media (max-width: 800px) {
   #nav {
     flex-direction: column;
@@ -83,7 +83,9 @@
 
   .collapse {
     display: none;
-    transition: width 600ms ease-out, height 600ms ease-out;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
   }
 
 }
