@@ -6,6 +6,16 @@
   align-items: center;
 }
 
+.form {
+  height: 100%;
+  width: 100%;
+  padding: 0 1em 1em 0;
+}
+
+.noForm {
+  display: none;
+}
+
 .description {
   height: 100%;
   width: 100%;
@@ -20,9 +30,31 @@
   margin-top: 0;
 }
 
+.button {
+  padding: 0.5em 1.0rem;
+  margin: 0.5em 0em;
+  border: 0px solid white;
+  border-radius: 4px;
+  color: white;
+  background: -webkit-linear-gradient(left, darkorange , red);
+  background: -o-linear-gradient(right, darkorange, red);
+  background: -moz-linear-gradient(right, darkorange, red);
+  background: linear-gradient(to right, darkorange , red); 
+}
+
+.button:hover {
+  border: 2px solid red;
+  font-weight: bold;
+  color: red;
+  background: white;
+}
 
 @media (max-width: 800px) {
   .mapDescription {
     flex-direction: column;
+    height: 100%;
+  }
+  .description {
+    margin-bottom: 1em;
   }
 }

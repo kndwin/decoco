@@ -1,4 +1,4 @@
-.container {
+.formContainer,.inputsContainer {
   max-width: 800px;
   width: 100%;
 }
@@ -12,11 +12,26 @@
 }
 
 .input:focus {
-  border: 3px solid #555;
+  border: 5px solid #555;
 }
 
 .textarea {
-  height: 20em;
+  height: 9em;
+}
+
+#submit {
+  color: white;
+  background: -webkit-linear-gradient(left, darkorange , red);
+  background: -o-linear-gradient(right, darkorange, red);
+  background: -moz-linear-gradient(right, darkorange, red);
+  background: linear-gradient(to right, darkorange , red); 
+}
+
+#submit:hover {
+  border: 2px solid red;
+  font-weight: bold;
+  color: red;
+  background: white;
 }
 
 .button {
@@ -24,11 +39,19 @@
   margin: 0.5em 0em;
   border: 0px solid white;
   border-radius: 4px;
-  color: white;
-   background: -webkit-linear-gradient(left, darkorange , red);
-   background: -o-linear-gradient(right, darkorange, red);
-   background: -moz-linear-gradient(right, darkorange, red);
-   background: linear-gradient(to right, darkorange , red); 
+}
+
+.button:hover {
+  color: black;
+  border: 2px solid black;
+  font-weight: bold;
+  background: white;
+}
+
+.buttonRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .label {

@@ -9,7 +9,11 @@ type Inputs = {
   messsage: string
 }
 
-export default function ContactForm () {
+export default function ContactForm ({
+  isCancel,
+}: {
+  isCancel: () => void
+}) {
 
   const { register, handleSubmit, watch, errors } = useForm<Inputs>();
 
@@ -25,8 +29,8 @@ export default function ContactForm () {
   
   return (
     <form onSubmit={sendEmail}
-        className={styles.container}>
-      <div className={styles.container}
+        className={styles.formContainer}>
+      <div className={styles.inputsContainer}
       >
         <label htmlFor="Name"
           className={styles.label}>
@@ -59,10 +63,21 @@ export default function ContactForm () {
           ref={register} 
         />
       </div>
-      <input 
-        type="submit" 
-        className={styles.button}
-      />
+      <div className={styles.buttonRow}>
+        <input 
+          type="submit" 
+          value="Submit Form"
+          className={styles.button}
+          id={styles.submit}
+        >
+        </input>
+        <button
+          className={styles.button}
+          onClick={isCancel}
+        >
+          Cancel
+        </button>
+      </div>
     </form>
   )
 }
