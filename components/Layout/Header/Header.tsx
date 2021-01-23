@@ -17,11 +17,12 @@ export default function Header ({
   return (
   <>
     <header id={styles.nav}
-      className={scrolled ? styles.scrolled : ""}>
+      className={scrolled ? styles.scrolled : ""}
+      onClick={handleClick}
+    >
       <img src='/logo-black.png' 
         alt="Logo for Decoco" 
         className={styles.logo}
-        onClick={handleClick}
       />
       <div className={clicked ? styles.link : styles.collapse}>
         <Link href="/">
