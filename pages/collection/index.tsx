@@ -20,7 +20,7 @@ export default function Collection({
 }) {
 
   return (
-    <Layout>
+    <Layout page="collection">
       <h1 className={utils.title}>
         Collection
       </h1>

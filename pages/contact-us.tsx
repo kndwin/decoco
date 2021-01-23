@@ -6,7 +6,7 @@ import Map from '../components/Map/Map'
 
 export default function ContactUs() {
   return (
-    <Layout>
+    <Layout page="contact-us">
       <h1 className={utils.title}>
         Contact Us
       </h1>

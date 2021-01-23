@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout page="/">
       <h1 className={utils.title}>
         custom made
       </h1>

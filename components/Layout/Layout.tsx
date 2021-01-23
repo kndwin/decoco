@@ -5,10 +5,12 @@ import Header from './Header/Header'
 
 export default function Layout ({ 
   children, 
-  title = 'Decoco Designs'
+  title = 'Decoco Designs',
+  page
 }: {
   children?: ReactNode
   title?: string
+  page?: string
 }) {
 
   const [scrolled, setScrolled] = useState<boolean>(false)
@@ -35,7 +37,9 @@ export default function Layout ({
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className={styles.container}>
-        <Header scrolled={scrolled}/>
+        <Header scrolled={scrolled}
+          page={page}
+        />
         <div className={scrolled ? `${styles.main} ${styles.navPadding}` : styles.main}>
           {children}
         </div>

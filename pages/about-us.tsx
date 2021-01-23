@@ -3,7 +3,7 @@ import utils from '../styles/utils.module.scss'
 
 export default function AboutUs() {
   return (
-    <Layout>
+    <Layout page="about-us">
       <h1 className={utils.title}>
         About Us
       </h1>
