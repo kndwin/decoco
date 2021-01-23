@@ -3,11 +3,19 @@
   line-height: 1.15;
   font-size: 4rem;
   text-align: center;
+   background: -webkit-linear-gradient(left, darkorange , red);
+   background: -o-linear-gradient(right, darkorange, red);
+   background: -moz-linear-gradient(right, darkorange, red);
+   background: linear-gradient(to right, darkorange , red); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 
 .titleH2 {
   margin: 1rem 0;
   font-size: 2.5rem;
+  color: darkorange;
 }
 
 .width100 {

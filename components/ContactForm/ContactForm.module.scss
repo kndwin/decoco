@@ -22,8 +22,13 @@
 .button {
   padding: 0.5em 1.0rem;
   margin: 0.5em 0em;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 4px;
+  color: white;
+   background: -webkit-linear-gradient(left, darkorange , red);
+   background: -o-linear-gradient(right, darkorange, red);
+   background: -moz-linear-gradient(right, darkorange, red);
+   background: linear-gradient(to right, darkorange , red); 
 }
 
 .label {
