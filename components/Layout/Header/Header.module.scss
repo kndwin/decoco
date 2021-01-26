@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   max-width: 800px;
-  padding: 1em;
+  padding: 0 1em;
   background-color: white;
   top: 0;
   overflow: hidden;
@@ -97,7 +97,6 @@
     
     a {
       margin: 0.5rem 0em;
-      font-size: 1.5rem;
     }
   }
 
@@ -117,11 +116,32 @@
     }
   }
 
+  .collection {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    margin: 0;
+    a {
+      margin: 0;
+    }
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .dropCollapse,.dropdown {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    a {
+      width: fit-content; 
+    }
+  }
+
   .collapse {
     display: none;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
   }
 
 }
