@@ -2,6 +2,7 @@ import React, { ReactNode, useState, useEffect } from 'react'
 import Head from 'next/head'
 import styles from './Layout.module.scss'
 import Header from './Header/Header'
+import Footer from './Footer/Footer'
 
 export default function Layout ({ 
   children, 
@@ -40,15 +41,11 @@ export default function Layout ({
         <Header scrolled={scrolled}
           page={page}
         />
-        <div className={scrolled ? `${styles.main} ${styles.navPadding}` : styles.main}>
+        <div className={scrolled ? `${styles.main} 
+          ${styles.navPadding}` : styles.main}>
           {children}
         </div>
-        <footer className={styles.footer}>
-          <a href="https://kndwin.dev">
-          <span style={{fontWeight: 'bold'}}>{`{ }`}</span>
-          &nbsp; with ❤ by kndwin
-          </a>
-        </footer>
+        <Footer />
       </div>
     </div>
   )
