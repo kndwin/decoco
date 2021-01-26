@@ -7,10 +7,12 @@ export default function Home() {
   return (
     <Layout page="/">
       <h1 className={utils.title}>
-        custom made
+        custom made living space
       </h1>
       <p className={utils.description}>
-        any size, any color, any design
+        We make all our furniture and kitchen from the ground up. This means you can customize your living space.
+
+        Any size, any color, any design
         </p>
       <img src="home-green-couch.jpg"
         width={1000}
@@ -21,7 +23,7 @@ export default function Home() {
       Sed faucibus turpis in eu mi. Nam libero justo laoreet sit amet cursus sit amet. A diam maecenas sed enim. Interdum velit euismod in pellentesque massa placerat duis ultricies. Diam donec adipiscing tristique risus nec. At risus viverra adipiscing at in tellus integer feugiat. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Ultricies mi eget mauris pharetra et ultrices neque. Porttitor eget dolor morbi non arcu. Pellentesque sit amet porttitor eget dolor morbi non arcu. Aliquam eleifend mi in nulla. Nulla pharetra diam sit amet nisl suscipit. Viverra maecenas accumsan lacus vel facilisis volutpat est velit egestas.
         </p>
       <h1 className={utils.title}>
-        custom made
+        how it works
       </h1>
       <img src="home-green-couch.jpg"
         width={1000}

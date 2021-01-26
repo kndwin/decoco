@@ -20,6 +20,9 @@
 
   a:hover {
     font-weight: bold;
+    border-bottom: 5px solid orange;
+    padding-bottom: 2px;
+    padding-top: 7px;
   }
 }
 
@@ -40,7 +43,33 @@
   align-items: center;
 }
 
-.collapse {
+.dropdown {
+  position: absolute;
+  top: 5em;
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+
+  a {
+    display: block;
+    margin: 1em;
+    font-size: 1em;
+  }
+}
+
+.collection {
+  display: flex;
+  margin: 1em;
+  font-size: 1.5em;
+  align-items: center;
+}
+
+.dropCollapse {
+  display: none;
+}
+
+.icon {
+  height: 1em;
 }
 
 .scrolled {

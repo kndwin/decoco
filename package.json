@@ -9,6 +9,9 @@
     "export": "next export"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "critters": "^0.0.6",
     "jimp": "^0.16.1",
     "next": "10.0.4",
