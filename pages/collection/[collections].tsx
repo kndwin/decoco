@@ -3,6 +3,7 @@ import utils from '../../styles/utils.module.scss'
 import { getCollectionData } from '../../lib/collectionData'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { useRouter } from 'next/router' 
+import Slider from 'react-animated-slider'
 
 export default function CollectionDetails({
   collectionData
@@ -37,24 +38,23 @@ export default function CollectionDetails({
       <h1 className={utils.title}>
         {collection}
       </h1>
-      <div className={utils.grid}>
-        {collectionData
-          .filter(colData => !colData.title
-            .toLowerCase()
-            .localeCompare(collection))
-            [0]
-          ['products'].map((product, index) => (
-            <a className={utils.card} key={index}>
-              <h3>{product.title}</h3>
-              <p>{product.description}</p>
-              <img className={utils.image}
-                src={product.imageSrc}
-                width={1000} height={500}
-              />
-            </a>
-          )
-        )}
-      </div>
+        <Slider infinite={true}
+          autoplay={200}
+        >
+          {collectionData.filter(colData => !colData.title
+              .toLowerCase()
+              .localeCompare(collection))
+              [0]['products'].map((product, index) => (
+              <div className={""} key={index}>
+                <h3>{product.title}</h3>
+                <p>{product.description}</p>
+                <img className={utils.image}
+                  src={product.imageSrc}
+                />
+              </div>
+            )
+          )}
+        </Slider>
     </Layout>
   )
 }
