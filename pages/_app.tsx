@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import '../node_modules/react-animated-slider/build/horizontal.css'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

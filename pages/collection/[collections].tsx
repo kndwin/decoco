@@ -1,9 +1,10 @@
 import Layout from '../../components/Layout/Layout'
 import utils from '../../styles/utils.module.scss'
+import styles from './collections.module.scss'
 import { getCollectionData } from '../../lib/collectionData'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { useRouter } from 'next/router' 
-import Slider from 'react-animated-slider'
+import { Carousel } from 'react-responsive-carousel'
 
 export default function CollectionDetails({
   collectionData
@@ -38,23 +39,26 @@ export default function CollectionDetails({
       <h1 className={utils.title}>
         {collection}
       </h1>
-        <Slider infinite={true}
-          autoplay={200}
-        >
-          {collectionData.filter(colData => !colData.title
-              .toLowerCase()
-              .localeCompare(collection))
-              [0]['products'].map((product, index) => (
-              <div className={""} key={index}>
-                <h3>{product.title}</h3>
-                <p>{product.description}</p>
-                <img className={utils.image}
-                  src={product.imageSrc}
-                />
-              </div>
-            )
-          )}
-        </Slider>
+      <Carousel showArrows={true} 
+        autoPlay={true}
+        dynamicHeight={true}
+      >
+        {collectionData.filter(colData => !colData.title
+            .toLowerCase()
+            .localeCompare(collection))
+            [0]['products'].map((product, index) => (
+            <div key={index}>
+              <h3 className={styles.carouselTitle}>
+                {product.title}
+              </h3>
+              <p className={styles.carouselDescription}>
+                {product.description}
+              </p>
+              <img src={product.imageSrc} alt={product.title} />
+            </div>
+          )
+        )}
+      </Carousel>
     </Layout>
   )
 }

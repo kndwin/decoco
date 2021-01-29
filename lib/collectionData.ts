@@ -23,14 +23,14 @@ export function getCollectionData() {
       imageSrc: '/home-green-couch.jpg',
       products: [
         {
-          title: 'Sofa',
-          description: 'Sofas, Lounges, Ottomans',
-          imageSrc: '/furniture/sophia.jpg'
+          title: 'Lily',
+          description: 'Beautifully authentic and muted colors',
+          imageSrc: '/furniture/lily.jpg'
         },
         {
-          title: 'Beth',
-          description: 'Sofas, Lounges, Ottomans',
-          imageSrc: '/furniture/sophia.jpg'
+          title: 'Tulip',
+          description: 'Fun and classy',
+          imageSrc: '/furniture/tulip.jpg'
         }
       ]
     },
@@ -54,17 +54,32 @@ export function getCollectionData() {
     {
       title: 'Kitchen', 
       description: 'Sofas, Lounges, Ottomans',
-      imageSrc: '/home-green-couch.jpg',
+      imageSrc: '/kitchen/acacia.jpg',
       products: [
         {
-          title: 'Sofa',
-          description: 'Sofas, Lounges, Ottomans',
-          imageSrc: '/furniture/sophia.jpg'
+          title: 'Acacia',
+          description: 'Beautifully authentic and muted colors',
+          imageSrc: '/kitchen/acacia.jpg'
         },
         {
-          title: 'Beth',
-          description: 'Sofas, Lounges, Ottomans',
-          imageSrc: '/furniture/sophia.jpg'
+          title: 'Alyssum',
+          description: 'Fun and classy',
+          imageSrc: '/kitchen/alyssum.jpg'
+        },
+        {
+          title: 'Azalea',
+          description: 'Fun and classy',
+          imageSrc: '/kitchen/azalea.jpg'
+        },
+        {
+          title: 'Leadwort',
+          description: 'Fun and classy',
+          imageSrc: '/kitchen/leadwort.jpg'
+        },
+        {
+          title: 'Cerastium',
+          description: 'Fun and classy',
+          imageSrc: '/kitchen/cerastium.jpg'
         }
       ]
     },
