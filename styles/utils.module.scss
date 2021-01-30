@@ -3,10 +3,10 @@
   line-height: 1.15;
   font-size: 4rem;
   text-align: center;
-   background: -webkit-linear-gradient(left, darkorange , red);
-   background: -o-linear-gradient(right, darkorange, red);
-   background: -moz-linear-gradient(right, darkorange, red);
-   background: linear-gradient(to right, darkorange , red); 
+  background: -webkit-linear-gradient(left, darkorange , red);
+  background: -o-linear-gradient(right, darkorange, red);
+  background: -moz-linear-gradient(right, darkorange, red);
+  background: linear-gradient(to right, darkorange , red); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -43,7 +43,7 @@
   text-decoration: none;
   border: 2px solid black;
   border-radius: 10px;
-  background-color: whitesmoke; 
+  background-color: white; 
 
   h3 {
     margin: 0 0 1rem 0;
@@ -61,7 +61,8 @@
 .card:focus,
 .card:active {
   color: black;
-  border-color: black;
+  background-color: whitesmoke; 
+  border: 3px solid black; 
 }
 
 .image {
