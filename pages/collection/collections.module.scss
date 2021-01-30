@@ -3,7 +3,14 @@
   font-size: 2em;
 }
 
-.carouselDescription {
-  color: white;
-  margin: 1em 0 2em 0;
+.carouselContainer {
+  width: 100%;
+}
+
+.carouselSlide {
+  background: white ;
+}
+
+.slide {
+  background: white;
 }

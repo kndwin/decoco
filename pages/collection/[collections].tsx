@@ -42,22 +42,25 @@ export default function CollectionDetails({
       <Carousel showArrows={true} 
         autoPlay={true}
         dynamicHeight={true}
+        showStatus={false}
+        className={styles.carouselContainer}
       >
-        {collectionData.filter(colData => !colData.title
+        {collectionData.filter(
+          colData => !colData.title
             .toLowerCase()
             .localeCompare(collection))
             [0]['products'].map((product, index) => (
-            <div key={index}>
-              <h3 className={styles.carouselTitle}>
-                {product.title}
-              </h3>
-              <p className={styles.carouselDescription}>
-                {product.description}
-              </p>
-              <img src={product.imageSrc} alt={product.title} />
-            </div>
+              <div key={index} className={styles.carouselSlide}>
+                <h3 className={`${styles.carouselTitle} legend`}>
+                  {`${product.title}: ${product.description}`}
+                </h3>
+                <img src={product.imageSrc} alt={product.title}
+                  className={styles.imageResponsive}
+                />
+              </div>
+            )
           )
-        )}
+        }
       </Carousel>
     </Layout>
   )
