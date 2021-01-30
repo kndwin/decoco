@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import styles from './Header.module.scss'
-import useWindowDimensions from '../../../lib/useWindowDimensions'
 import { getCollectionData } from '../../../lib/collectionData'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
@@ -20,7 +19,6 @@ export default function Header ({
 
   const handleClick = () => setClick(!clicked)
   const handleDropdown = () => setDropdown(!dropdown)
-  const { width } = useWindowDimensions();
 
   const ref = useRef(null);
   const handleClickOutsideOfDropdown = (event) => {
@@ -43,18 +41,11 @@ export default function Header ({
       className={scrolled ? styles.scrolled : ""}
       onClick={handleClick}
     >
-      {width > 800 &&
-        <Link href="/">
-          <div className={styles.logoCss}>
-            D
-          </div>
-        </Link>
-        }
-        {width < 800 &&
-          <div className={`${styles.logoCss} ${styles.logoCollapse}`}>
-            De-coco
-          </div>
-        }
+      <Link href="/">
+        <div className={`${styles.logoCss} ${styles.logoCollapse}`}>
+          De<span style={{color: "darkorange"}}>-</span>coco
+        </div>
+      </Link>
       <div className={clicked ? styles.link : styles.collapse}>
         <Link href="/">
           <a className={page == "/" ? styles.underline : ""}>

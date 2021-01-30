@@ -18,7 +18,6 @@ export default function ContactForm ({
   const { register, handleSubmit, watch, errors } = useForm<Inputs>();
 
   const sendEmail = (e) => {
-    e.preventDefault();
     emailjs.sendForm('service_12sy6gf', 'template_2n4reca', e.target, 'user_n1rYzzL6qqrffqtOAgZ78')
       .then((result) => {
         console.log(result.text)
