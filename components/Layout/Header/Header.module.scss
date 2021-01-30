@@ -27,6 +27,7 @@
 }
 
 .underline {
+  width: fit-content;
   border-bottom: 5px solid darkorange;
   padding-bottom: 2px;
   padding-top: 7px;
@@ -45,10 +46,12 @@
 
 .dropdown {
   position: absolute;
-  top: 5em;
+  top: 81px;
   display: flex;
   flex-direction: column;
   background: whitesmoke;
+  border: 2px solid black;
+  border-radius: 5px;
 
   a {
     display: block;
@@ -59,9 +62,10 @@
 
 .collection {
   display: flex;
-  margin: 1em;
+  margin: 0 0.5em;
   font-size: 1.5em;
   align-items: center;
+
 }
 
 .dropCollapse {
@@ -70,6 +74,10 @@
 
 .icon {
   height: 1em;
+}
+
+.icon:hover {
+  height: 1.2em; 
 }
 
 .scrolled {

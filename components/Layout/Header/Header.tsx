@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import styles from './Header.module.scss'
 import { getCollectionData } from '../../../lib/collectionData'
@@ -18,7 +18,22 @@ export default function Header ({
   const collectionData = getCollectionData()
 
   const handleClick = () => setClick(!clicked)
-  const handleDropdown  = () => setDropdown(!dropdown)
+  const handleDropdown = () => setDropdown(!dropdown)
+
+  const ref = useRef(null);
+  const handleClickOutsideOfDropdown = (event) => {
+    if (ref.current && !ref.current.contains(event.target)) {
+      setDropdown(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutsideOfDropdown, true);
+    return () => {
+      document.removeEventListener('click', handleClickOutsideOfDropdown, true);
+    };
+  });
+
 
   return (
   <>
@@ -46,7 +61,9 @@ export default function Header ({
             onClick={handleDropdown}
             className={styles.icon}
           />
-          <div className={dropdown ? styles.dropdown : styles.dropCollapse}>
+          <div className={dropdown ? styles.dropdown : styles.dropCollapse}
+            ref={ref}
+          >
             {collectionData.map((item, index) => (
               <Link as={`/collection/${item.title.toLowerCase().replace(' ', '-')}`}
                 href="/collection/[collections]">
