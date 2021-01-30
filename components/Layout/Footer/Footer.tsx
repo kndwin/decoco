@@ -6,18 +6,12 @@ import { faFacebook, faGoogle, faGithub} from "@fortawesome/free-brands-svg-icon
 export default function Header () {
   return (
     <footer className={styles.footer}>
+    <a href="https://facebook.com">
       <FontAwesomeIcon icon={faFacebook}
         className={styles.icon}
         id={styles.facebook}
       />
-      <FontAwesomeIcon icon={faGoogle}
-        className={styles.icon}
-        id={styles.google}
-      />
-      <FontAwesomeIcon icon={faGithub}
-        className={styles.icon}
-        href="https://kndwin.dev"
-      />
+    </a>
     </footer>
   )
 }
