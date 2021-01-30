@@ -18,3 +18,12 @@
   color: red;
   background: white;
 }
+
+.link {
+  border-bottom: 5px solid darkorange;
+}
+
+.link:hover {
+  font-weight: bold;
+  border-bottom: 5px solid red;
+}
