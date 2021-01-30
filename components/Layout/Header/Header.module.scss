@@ -39,6 +39,24 @@
   margin: 1em 0;
 }
 
+.logoCss {
+  margin: 0.5em 0;
+  font-family: Roboto;
+  font-size: 2em;
+  font-weight: bold; 
+  border: 5px solid black;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0.1em; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoCollapse {
+  width: fit-content;
+}
+
 .link,.collapse {
   display: flex;
   flex-direction: row;
@@ -101,8 +119,7 @@
 @media (max-width: 800px) {
   #nav {
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     
     a {
       margin: 0.5rem 0em;
