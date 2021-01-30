@@ -39,21 +39,37 @@
   margin: 1em 0;
 }
 
-.logoCss {
+#logoCss {
   margin: 0.5em 0;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: bold; 
   border: 5px solid black;
-  width: 1.5em;
-  height: 1.5em;
-  padding: 0.1em; 
-  display: flex;
+  width: fit-content;
+  padding: 0.2em 0.6em; 
+  display: block;
   align-items: center;
   justify-content: center;
+
+  a {
+    margin: 0; 
+    font-size: 2em;
+  }
+
+  a:hover {
+    margin: 0; 
+    padding: 0; 
+    border-bottom: 0px solid white;
+  }
 }
 
-.logoCollapse {
-  width: fit-content;
+#logoCss:hover {
+  border: 5px solid white; 
+  background: -webkit-linear-gradient(left, darkorange , red);
+  background: -o-linear-gradient(right, darkorange, red);
+  background: -moz-linear-gradient(right, darkorange, red);
+  background: linear-gradient(to right, darkorange , red); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .link,.collapse {
@@ -122,6 +138,12 @@
     
     a {
       margin: 0.5rem 0em;
+    }
+  }
+
+  #logoCss {
+    a {
+      margin: 0; 
     }
   }
 

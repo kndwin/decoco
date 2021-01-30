@@ -41,11 +41,13 @@ export default function Header ({
       className={scrolled ? styles.scrolled : ""}
       onClick={handleClick}
     >
-      <Link href="/">
-        <div className={`${styles.logoCss} ${styles.logoCollapse}`}>
-          De<span style={{color: "darkorange"}}>-</span>coco
-        </div>
-      </Link>
+      <div id={`${styles.logoCss}`}>
+        <Link href="/">
+          <a>
+            De<span style={{color: "darkorange"}}>-</span>coco
+          </a>
+        </Link>
+      </div>
       <div className={clicked ? styles.link : styles.collapse}>
         <Link href="/">
           <a className={page == "/" ? styles.underline : ""}>
