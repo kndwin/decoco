@@ -51,9 +51,6 @@ export default function CollectionDetails({
             .localeCompare(collection))
             [0]['products'].map((product, index) => (
               <div key={index} className={styles.carouselSlide}>
-                <h3 className={`${styles.carouselTitle} legend`}>
-                  {`${product.title}: ${product.description}`}
-                </h3>
                 <img src={product.imageSrc} alt={product.title}
                   className={styles.imageResponsive}
                 />

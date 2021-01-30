@@ -14,7 +14,7 @@ export default function Home() {
 
         Any size, any color, any design
         </p>
-      <img src="home-green-couch.jpg"
+      <img src="kitchen/acacia.jpg"
         width={1000}
         height={500}
         className={utils.image}
@@ -25,7 +25,7 @@ export default function Home() {
       <h1 className={utils.title}>
         how it works
       </h1>
-      <img src="home-green-couch.jpg"
+      <img src="furniture/lily.jpg"
         width={1000}
         height={500}
         className={utils.image}
