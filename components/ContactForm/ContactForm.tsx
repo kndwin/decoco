@@ -28,7 +28,7 @@ export default function ContactForm ({
   }
   
   return (
-    <form onSubmit={sendEmail}
+    <form onSubmit={handleSubmit(sendEmail)}
         className={styles.formContainer}>
       <div className={styles.inputsContainer}
       >
@@ -66,7 +66,7 @@ export default function ContactForm ({
       <div className={styles.buttonRow}>
         <input 
           type="submit" 
-          value="Submit Form"
+          value="Submit"
           className={styles.button}
           id={styles.submit}
         >

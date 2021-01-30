@@ -72,32 +72,42 @@ export function getCollectionData() {
     {
       title: 'Kitchen and Vanity', 
       description: 'Sofas, Lounges, Ottomans',
-      imageSrc: '/kitchen/acacia.jpg',
+      imageSrc: '/kitchen/KI01.jpg',
       products: [
         {
           title: 'Acacia',
           description: 'Beautifully authentic and muted colors',
-          imageSrc: '/kitchen/acacia.jpg'
+          imageSrc: '/kitchen/KI01.jpg'
         },
         {
           title: 'Alyssum',
           description: 'Fun and classy',
-          imageSrc: '/kitchen/alyssum.jpg'
+          imageSrc: '/kitchen/KI02.jpg'
         },
         {
           title: 'Azalea',
           description: 'Fun and classy',
-          imageSrc: '/kitchen/azalea.jpg'
+          imageSrc: '/kitchen/KI03.jpg'
         },
         {
           title: 'Leadwort',
           description: 'Fun and classy',
-          imageSrc: '/kitchen/leadwort.jpg'
+          imageSrc: '/kitchen/KI04.jpg'
         },
         {
           title: 'Cerastium',
           description: 'Fun and classy',
-          imageSrc: '/kitchen/cerastium.jpg'
+          imageSrc: '/kitchen/KI05.jpg'
+        },
+        {
+          title: 'Cerastium',
+          description: 'Fun and classy',
+          imageSrc: '/vanity/VA01.jpg'
+        },
+        {
+          title: 'Cerastium',
+          description: 'Fun and classy',
+          imageSrc: '/vanity/VA02.jpg'
         }
       ]
     }

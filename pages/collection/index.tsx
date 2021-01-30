@@ -25,7 +25,7 @@ export default function Collection({
         Collection
       </h1>
       <p className={utils.description}>
-        With 20 years of experience, we'll take care of you
+        Need inspiration? Check out the designs that we offer below.
       </p>
       <div className={utils.grid} >
       {collectionData.map((item, index) => (
