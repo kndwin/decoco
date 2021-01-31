@@ -100,6 +100,36 @@ export function getCollectionData() {
           imageSrc: '/kitchen/KI05.jpg'
         },
         {
+          title: 'Alyssum',
+          description: 'Fun and classy',
+          imageSrc: '/kitchen/KI06.jpg'
+        },
+        {
+          title: 'Azalea',
+          description: 'Fun and classy',
+          imageSrc: '/kitchen/KI07.jpg'
+        },
+        {
+          title: 'Leadwort',
+          description: 'Fun and classy',
+          imageSrc: '/kitchen/KI08.jpg'
+        },
+        {
+          title: 'Cerastium',
+          description: 'Fun and classy',
+          imageSrc: '/kitchen/KI09.jpg'
+        },
+        {
+          title: 'Leadwort',
+          description: 'Fun and classy',
+          imageSrc: '/kitchen/KI10.jpg'
+        },
+        {
+          title: 'Cerastium',
+          description: 'Fun and classy',
+          imageSrc: '/kitchen/KI11.jpg'
+        },
+        {
           title: 'Cerastium',
           description: 'Fun and classy',
           imageSrc: '/vanity/VA01.jpg'
@@ -108,6 +138,11 @@ export function getCollectionData() {
           title: 'Cerastium',
           description: 'Fun and classy',
           imageSrc: '/vanity/VA02.jpg'
+        },
+        {
+          title: 'Cerastium',
+          description: 'Fun and classy',
+          imageSrc: '/vanity/VA03.jpg'
         }
       ]
     }
