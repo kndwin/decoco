@@ -8,7 +8,7 @@ export default function AboutUs() {
         About Us
       </h1>
       <p className={utils.description}>
-        We are Australian Kitchen, Furniture and Vanity Manyfacturers and Wholesales based in Sydney, NSW.
+        We are Australian kitchen, furniture and vanity manufacturers based in Sydney, NSW.
       </p>
       <p className={utils.description}>
         We provide high-quality, custom-made designs to suit your living space.

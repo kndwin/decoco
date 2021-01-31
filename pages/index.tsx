@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Layout page="/">
       <h1 className={utils.title}>
-        living spaces made easy
+        custom made furniture
       </h1>
       <p className={utils.description}>
           Choosing your living space shouldn't have to be stressful. 
