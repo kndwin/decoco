@@ -35,7 +35,7 @@ export default function ContactUs() {
            Phone number
           </h2>
           <p className={`${styles.fontDescription}`}>
-             0421606978
+            0401119989
           </p>
           <h2 className={`${styles.titleH2}`}>
              Opening hours

@@ -2,7 +2,7 @@ export function getCollectionData() {
   const collectionData = [
     {
       title: 'Bedroom', 
-      description: 'Sofas, Lounges, Ottomans',
+      description: '',
       imageSrc: '/bedroom/BE01.png',
       products: [
         {
@@ -39,7 +39,7 @@ export function getCollectionData() {
     }, 
     {
       title: 'Living room', 
-      description: 'Sofas, Lounges, Ottomans',
+      description: '',
       imageSrc: '/furniture/FU01.jpg',
       products: [
         {
@@ -71,7 +71,7 @@ export function getCollectionData() {
     },
     {
       title: 'Kitchen and Vanity', 
-      description: 'Sofas, Lounges, Ottomans',
+      description: '',
       imageSrc: '/kitchen/KI01.jpg',
       products: [
         {

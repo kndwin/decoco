@@ -8,19 +8,10 @@ export default function AboutUs() {
         About Us
       </h1>
       <p className={utils.description}>
-        Our story started when we were upholstering furniture from the ground up.
+        We are Australian Kitchen, Furniture and Vanity Manyfacturers and Wholesales based in Sydney, NSW.
       </p>
-      <img className={utils.image}
-        src="/about-us.jpg"
-        width={1000}
-        height={500}
-      />
       <p className={utils.description}>
-      Since then, our journey has branched out and diversified our skill set.
-      <br />
-      We picked up skills to build beds, kitchens and vanity. 
-      <br />
-      With this skillset, we hope to offer our customer the ability to truly customize their living space.
+        We provide high-quality, custom-made designs to suit your living space.
       </p>
     </Layout>
   )
