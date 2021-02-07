@@ -145,7 +145,47 @@ export function getCollectionData() {
           imageSrc: '/vanity/VA03.jpg'
         }
       ]
-    }
+    },
+    {
+      title: 'Accessories', 
+      description: '',
+      imageSrc: '/accessories/AS03.jpg',
+      products: [
+				{
+          title: 'Cerastium',
+          description: 'Fun and classy',
+          imageSrc: '/accessories/AS01.jpg'
+				},{
+          title: 'Cerastium',
+          description: 'Fun and classy',
+          imageSrc: '/accessories/AS02.jpg'
+				},{
+          title: 'Cerastium',
+          description: 'Fun and classy',
+          imageSrc: '/accessories/AS03.jpg'
+				},{
+          title: 'Cerastium',
+          description: 'Fun and classy',
+          imageSrc: '/accessories/AS04.jpg'
+				},{
+          title: 'Cerastium',
+          description: 'Fun and classy',
+          imageSrc: '/accessories/AS04.jpg'
+				},{
+          title: 'Cerastium',
+          description: 'Fun and classy',
+          imageSrc: '/accessories/AS05.jpg'
+				},{
+          title: 'Cerastium',
+          description: 'Fun and classy',
+          imageSrc: '/accessories/AS06.jpg'
+				},{
+          title: 'Cerastium',
+          description: 'Fun and classy',
+          imageSrc: '/accessories/AS07.jpg'
+				}
+			] 
+		}		 
   ]
   return collectionData
 }
