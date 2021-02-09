@@ -20,7 +20,9 @@
 
   a:hover {
     font-weight: bold;
-    border-bottom: 5px solid orange;
+  border-bottom: 5px solid darkorange;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(to left, darkorange, red); 
     padding-bottom: 2px;
     padding-top: 7px;
     width: fit-content;
@@ -30,6 +32,8 @@
 .underline {
   width: fit-content;
   border-bottom: 5px solid darkorange;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(to left, darkorange, red); 
   padding-bottom: 2px;
   padding-top: 7px;
 }
@@ -43,14 +47,12 @@
   margin: 0.5em 0;
   font-size: 1em;
   font-weight: bold; 
-  border: 5px solid black;
   height: 5em; 
   width: 10em;
   padding: 0.2em 0.6em; 
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%; 
 
   a {
     margin: 0; 
