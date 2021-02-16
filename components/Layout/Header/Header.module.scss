@@ -20,9 +20,9 @@
 
   a:hover {
     font-weight: bold;
-  border-bottom: 5px solid darkorange;
-	border-image-slice: 1;
-	border-image-source: linear-gradient(to left, darkorange, red); 
+		border-bottom: 5px solid darkorange;
+		border-image-slice: 1;
+		border-image-source: linear-gradient(to left, darkorange, red); 
     padding-bottom: 2px;
     padding-top: 7px;
     width: fit-content;
@@ -44,12 +44,10 @@
 }
 
 #logoCss {
-  margin: 0.5em 0;
   font-size: 1em;
   font-weight: bold; 
   height: 5em; 
-  width: 10em;
-  padding: 0.2em 0.6em; 
+  width: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,7 +65,6 @@
 }
 
 #logoCss:hover {
-  border: 5px solid white; 
   background: -webkit-linear-gradient(left, darkorange , red);
   background: -o-linear-gradient(right, darkorange, red);
   background: -moz-linear-gradient(right, darkorange, red);

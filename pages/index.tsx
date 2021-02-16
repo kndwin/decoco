@@ -12,8 +12,7 @@ export default function Home() {
       <p className={utils.description}>
           Choosing your living space shouldn't have to be stressful. 
         <br/> Here at De-coco, all our furniture and kitchen are built and designed from scratch. 
-        <br/> This means you can customize your living space.
-        <br/> Any size, any color, any design.
+        <br/> This means you can customize your living space. Any size, any color, any design.
       </p>
       <img src="furniture/FU01.jpg"
         width={1000}
@@ -21,21 +20,30 @@ export default function Home() {
         className={utils.image}
       />
       <h1 className={utils.title}>
-        interested?
+        how it works
       </h1>
       <p className={utils.description}>
-        Get in touch with us and we'll reach out to you within 5 business days      
-        <br/> Need inspiration? Check out our {' '}
-        <a className={styles.link}>
-          <Link href="/collection">
-            collection
-          </Link>
-        </a>
-        .
+			<ol>
+				<li>
+					Find/bring a design you're interested in (Need inspiration? 
+					Check out our past designs through 
+					our <Link href="/collection">collection</Link>).
+				</li>
+				<li>
+					We'll assess the design, give you a quote and timeline.
+				</li>
+				<li>
+					Once you accept the payment, we'll start the building process and
+					notify you once it's complete!
+				</li>
+			</ol>
+      </p>
+      <p className={utils.description}>
+        Interested? Contact us below and we'll reach out to you within 5 business days      
       </p>
       <button className={styles.button}>
         <Link href='/contact-us'>
-          Get in touch
+          Contact us
         </Link>
       </button>
     </Layout>
