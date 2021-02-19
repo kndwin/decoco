@@ -46,17 +46,17 @@ export default function CollectionDetails({
         className={styles.carouselContainer}
       >
         {collectionData.filter(
-          colData => !colData.title
-            .toLowerCase()
-            .localeCompare(collection))
-            [0]['products'].map((product, index) => (
-              <div key={index} className={styles.carouselSlide}>
-                <img src={product.imageSrc} alt={product.title}
-                  className={styles.imageResponsive}
-                />
-              </div>
-            )
-          )
+					colData => !colData.title
+					.toLowerCase()
+					.localeCompare(collection)
+					)[0]['products'].map((product, index) => (
+						<div key={index} className={styles.carouselSlide}>
+							<img src={product.imageSrc} 
+								alt={product.description}
+								className={styles.imageResponsive}
+							/>
+						</div>
+					))
         }
       </Carousel>
     </Layout>

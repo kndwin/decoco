@@ -7,32 +7,32 @@ export function getCollectionData() {
       products: [
         {
           title: 'BE01',
-          description: 'Sofas, Lounges, Ottomans',
+          description: 'Orange brown leather bed with white sheets',
           imageSrc: '/bedroom/BE01.png'
         },
         {
           title: 'BE02',
-          description: 'Sofas, Lounges, Ottomans',
+          description: 'White chesterfield bed with white sheets',
           imageSrc: '/bedroom/BE02.png'
         }, 
         {
           title: 'BE03',
-          description: 'Sofas, Lounges, Ottomans',
+          description: 'Red column pattern bed with grey sheets',
           imageSrc: '/bedroom/BE03.jpg'
         }, 
         {
           title: 'BE04',
-          description: 'Sofas, Lounges, Ottomans',
+          description: 'Orange wooden bed with white sheets',
           imageSrc: '/bedroom/BE04.jpg'
         }, 
         {
           title: 'BE05',
-          description: 'Sofas, Lounges, Ottomans',
+          description: 'Gray fabric bed with white sheets',
           imageSrc: '/bedroom/BE05.jpg'
         }, 
         {
           title: 'BE06',
-          description: 'Sofas, Lounges, Ottomans',
+          description: 'Dark brown leather bed with white sheets',
           imageSrc: '/bedroom/BE06.jpg'
         }
       ]
