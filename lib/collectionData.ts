@@ -3,186 +3,186 @@ export function getCollectionData() {
     {
       title: 'Bedroom', 
       description: '',
-      imageSrc: '/bedroom/BE01.png',
+      imageSrc: '/bedroom/BE01.webp',
       products: [
         {
           title: 'BE01',
           description: 'Orange brown leather bed with white sheets',
-          imageSrc: '/bedroom/BE01.png'
+          imageSrc: '/bedroom/BE01.webp'
         },
         {
           title: 'BE02',
           description: 'White chesterfield bed with white sheets',
-          imageSrc: '/bedroom/BE02.png'
+          imageSrc: '/bedroom/BE02.webp'
         }, 
         {
           title: 'BE03',
           description: 'Red column pattern bed with grey sheets',
-          imageSrc: '/bedroom/BE03.jpg'
+          imageSrc: '/bedroom/BE03.webp'
         }, 
         {
           title: 'BE04',
           description: 'Orange wooden bed with white sheets',
-          imageSrc: '/bedroom/BE04.jpg'
+          imageSrc: '/bedroom/BE04.webp'
         }, 
         {
           title: 'BE05',
           description: 'Gray fabric bed with white sheets',
-          imageSrc: '/bedroom/BE05.jpg'
+          imageSrc: '/bedroom/BE05.webp'
         }, 
         {
           title: 'BE06',
           description: 'Dark brown leather bed with white sheets',
-          imageSrc: '/bedroom/BE06.jpg'
+          imageSrc: '/bedroom/BE06.webp'
         }
       ]
     }, 
     {
       title: 'Living room', 
       description: '',
-      imageSrc: '/furniture/FU01.jpg',
+      imageSrc: '/furniture/FU01.webp',
       products: [
         {
-          title: 'FU01',
+          title: 'Serene',
           description: 'Beautifully authentic and muted colors',
-          imageSrc: '/furniture/FU01.jpg'
+          imageSrc: '/furniture/FU01.webp'
         },
         {
           title: 'FU02',
           description: 'Fun and classy',
-          imageSrc: '/furniture/FU02.jpg'
+          imageSrc: '/furniture/FU02.webp'
         }, 
         {
-          title: 'FU03',
+          title: 'Galant',
           description: 'Fun and classy',
-          imageSrc: '/furniture/FU03.jpg'
+          imageSrc: '/furniture/FU03.webp'
         }, 
         {
-          title: 'FU04',
+          title: 'Chestnut',
           description: 'Fun and classy',
-          imageSrc: '/furniture/FU04.jpg'
+          imageSrc: '/furniture/FU04.webp'
         }, 
         {
           title: 'FU05',
           description: 'Fun and classy',
-          imageSrc: '/furniture/FU05.jpg'
+          imageSrc: '/furniture/FU05.webp'
         }
       ]
     },
     {
       title: 'Kitchen and Vanity', 
       description: '',
-      imageSrc: '/kitchen/KI01.jpg',
+      imageSrc: '/kitchen/KI01.webp',
       products: [
         {
           title: 'Acacia',
           description: 'Beautifully authentic and muted colors',
-          imageSrc: '/kitchen/KI01.jpg'
+          imageSrc: '/kitchen/KI01.webp'
         },
         {
           title: 'Alyssum',
           description: 'Fun and classy',
-          imageSrc: '/kitchen/KI02.jpg'
+          imageSrc: '/kitchen/KI02.webp'
         },
         {
           title: 'Azalea',
           description: 'Fun and classy',
-          imageSrc: '/kitchen/KI03.jpg'
+          imageSrc: '/kitchen/KI03.webp'
         },
         {
           title: 'Leadwort',
           description: 'Fun and classy',
-          imageSrc: '/kitchen/KI04.jpg'
+          imageSrc: '/kitchen/KI04.webp'
         },
         {
           title: 'Cerastium',
           description: 'Fun and classy',
-          imageSrc: '/kitchen/KI05.jpg'
+          imageSrc: '/kitchen/KI05.webp'
         },
         {
           title: 'Alyssum',
           description: 'Fun and classy',
-          imageSrc: '/kitchen/KI06.jpg'
+          imageSrc: '/kitchen/KI06.webp'
         },
         {
           title: 'Azalea',
           description: 'Fun and classy',
-          imageSrc: '/kitchen/KI07.jpg'
+          imageSrc: '/kitchen/KI07.webp'
         },
         {
           title: 'Leadwort',
           description: 'Fun and classy',
-          imageSrc: '/kitchen/KI08.jpg'
+          imageSrc: '/kitchen/KI08.webp'
         },
         {
           title: 'Cerastium',
           description: 'Fun and classy',
-          imageSrc: '/kitchen/KI09.jpg'
+          imageSrc: '/kitchen/KI09.webp'
         },
         {
           title: 'Leadwort',
           description: 'Fun and classy',
-          imageSrc: '/kitchen/KI10.jpg'
+          imageSrc: '/kitchen/KI10.webp'
         },
         {
           title: 'Cerastium',
           description: 'Fun and classy',
-          imageSrc: '/kitchen/KI11.jpg'
+          imageSrc: '/kitchen/KI11.webp'
         },
         {
           title: 'Cerastium',
           description: 'Fun and classy',
-          imageSrc: '/vanity/VA01.jpg'
+          imageSrc: '/vanity/VA01.webp'
         },
         {
           title: 'Cerastium',
           description: 'Fun and classy',
-          imageSrc: '/vanity/VA02.jpg'
+          imageSrc: '/vanity/VA02.webp'
         },
         {
           title: 'Cerastium',
           description: 'Fun and classy',
-          imageSrc: '/vanity/VA03.jpg'
+          imageSrc: '/vanity/VA03.webp'
         }
       ]
     },
     {
       title: 'Accessories', 
       description: '',
-      imageSrc: '/accessories/AS03.jpg',
+      imageSrc: '/accessories/AS03.webp',
       products: [
 				{
           title: 'Cerastium',
           description: 'Fun and classy',
-          imageSrc: '/accessories/AS01.jpg'
+          imageSrc: '/accessories/AS01.webp'
 				},{
           title: 'Cerastium',
           description: 'Fun and classy',
-          imageSrc: '/accessories/AS02.jpg'
+          imageSrc: '/accessories/AS02.webp'
 				},{
           title: 'Cerastium',
           description: 'Fun and classy',
-          imageSrc: '/accessories/AS03.jpg'
+          imageSrc: '/accessories/AS03.webp'
 				},{
           title: 'Cerastium',
           description: 'Fun and classy',
-          imageSrc: '/accessories/AS04.jpg'
+          imageSrc: '/accessories/AS04.webp'
 				},{
           title: 'Cerastium',
           description: 'Fun and classy',
-          imageSrc: '/accessories/AS04.jpg'
+          imageSrc: '/accessories/AS04.webp'
 				},{
           title: 'Cerastium',
           description: 'Fun and classy',
-          imageSrc: '/accessories/AS05.jpg'
+          imageSrc: '/accessories/AS05.webp'
 				},{
           title: 'Cerastium',
           description: 'Fun and classy',
-          imageSrc: '/accessories/AS06.jpg'
+          imageSrc: '/accessories/AS06.webp'
 				},{
           title: 'Cerastium',
           description: 'Fun and classy',
-          imageSrc: '/accessories/AS07.jpg'
+          imageSrc: '/accessories/AS07.webp'
 				}
 			] 
 		}		 
