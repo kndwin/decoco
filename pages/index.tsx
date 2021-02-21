@@ -14,7 +14,7 @@ export default function Home() {
         <br/> Here at De-coco, all our furniture and kitchen are built and designed from scratch. 
         <br/> This means you can customize your living space. Any size, any color, any design.
       </p>
-      <img src="furniture/FU01.jpg"
+      <img src="furniture/FU01.webp"
 				alt="A 3-saater biege couch with white walls, a lamp and some plants"
         width={1000}
         height={500}

@@ -6,7 +6,7 @@
   background: -webkit-linear-gradient(left, darkorange , red);
   background: -o-linear-gradient(right, darkorange, red);
   background: -moz-linear-gradient(right, darkorange, red);
-  background: linear-gradient(to right, darkorange , red); 
+	background: linear-gradient(to left, #65E727, #529D62); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -41,7 +41,7 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 10px;
   background-color: white; 
 
@@ -62,7 +62,7 @@
 .card:active {
   color: black;
   background-color: whitesmoke; 
-  border: 3px solid black; 
+  border: 1px solid black; 
 }
 
 .image {

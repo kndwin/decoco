@@ -19,9 +19,9 @@
   }
 
   a:hover {
-		border-bottom: 5px solid darkorange;
+		border-bottom: 5px solid #65E727;
 		border-image-slice: 1;
-		border-image-source: linear-gradient(to left, darkorange, red); 
+		border-image-source: linear-gradient(to left, #529D62, #65E727); 
     padding-bottom: 2px;
     padding-top: 7px;
     width: fit-content;
@@ -32,7 +32,7 @@
   width: fit-content;
   border-bottom: 5px solid darkorange;
 	border-image-slice: 1;
-	border-image-source: linear-gradient(to left, darkorange, red); 
+	border-image-source: linear-gradient(to left, #529D62, #65E727); 
   padding-bottom: 2px;
   padding-top: 7px;
 }
@@ -64,10 +64,7 @@
 }
 
 #logoCss:hover {
-  background: -webkit-linear-gradient(left, darkorange , red);
-  background: -o-linear-gradient(right, darkorange, red);
-  background: -moz-linear-gradient(right, darkorange, red);
-  background: linear-gradient(to right, darkorange , red); 
+	background: linear-gradient(to left,#65E727, #529D62 ); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -84,12 +81,11 @@
   display: flex;
   flex-direction: column;
   background: whitesmoke;
-  border: 2px solid black;
   border-radius: 5px;
 
   a {
+    margin: 0; 
     display: block;
-    margin: 1em;
     font-size: 1em;
   }
 }

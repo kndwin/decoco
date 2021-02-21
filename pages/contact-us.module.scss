@@ -37,16 +37,12 @@
   border: 0px solid white;
   border-radius: 4px;
   color: white;
-  background: -webkit-linear-gradient(left, darkorange , red);
-  background: -o-linear-gradient(right, darkorange, red);
-  background: -moz-linear-gradient(right, darkorange, red);
-  background: linear-gradient(to right, darkorange , red); 
+	background: linear-gradient(to left,  #529D62, #65E727); 
 }
 
 .button:hover {
-  border: 2px solid red;
-  font-weight: bold;
-  color: red;
+  border: 2px solid #529D62;
+  color: #529D62;
   background: white;
 }
 

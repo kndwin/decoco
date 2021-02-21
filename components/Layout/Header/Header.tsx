@@ -44,7 +44,7 @@ export default function Header ({
       <div id={`${styles.logoCss}`}>
         <Link href="/">
           <a>
-            De<span style={{color: "darkorange"}}>-</span>coco
+            De<span style={{color: "#529D62"}}>-</span>coco
           </a>
         </Link>
       </div>

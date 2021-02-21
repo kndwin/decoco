@@ -46,8 +46,7 @@ export default function CollectionDetails({
         className={styles.carouselContainer}
       >
         {collectionData.filter(
-					colData => !colData.title
-					.toLowerCase()
+					colData => !colData.title.toLowerCase()
 					.localeCompare(collection)
 					)[0]['products'].map((product, index) => (
 						<div key={index} className={styles.carouselSlide}>
