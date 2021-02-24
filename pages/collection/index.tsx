@@ -31,14 +31,13 @@ export default function Collection({
       {collectionData.map((item, index) => (
          <Link as={`collection/${item.title.toLowerCase().replace(' ', '-')}`}
           href="/collection/[collections]">
-          <div className={utils.card} key={index}>
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
-            <img className={utils.image}
-              src={item.imageSrc}
-              width={1000} height={500}
-            />
-          </div>
+					<a className={utils.card} key={index}>
+						<h3 className={utils.titleH3}>{item.title}</h3>
+						<img className={utils.image}
+							src={item.imageSrc}
+							width={1000} height={500}
+						/>
+					</a>
         </Link>
       ))}
       </div>
