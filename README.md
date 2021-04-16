@@ -1,2 +1,10 @@
-#Decoco
-A Nextjs site built with SASS and deployed on Vercel.
+# Decoco
+A furniture store landing page.
+
+# ⚙ stack
+**front end:** nextjs, sass
+**host:** vercel
+**extra:** emailjs, google maps api.
+
+# 🎯 goals
+   💻 build a functional site for a client
